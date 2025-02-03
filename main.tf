@@ -1,4 +1,3 @@
-```go
 data "aws_ami" "amazon-linux-2023" {
   owners      = ["amazon"]
   most_recent = true
@@ -81,4 +80,3 @@ output "sec_gr_id" {
 output "instance_id" {
   value = aws_instance.tfmyec2.*.id
 }
-```
